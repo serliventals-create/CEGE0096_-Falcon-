@@ -37,6 +37,7 @@ For Task 8, I reviewed Naismith's rule (walking at 5 km/h, plus 1 minute for eve
 ### Relevant Commits
 
 Add individual diary for Week 4
+Compile the group diary and upload to github
 No code commits this week, as agreed for the preparation week.
 
 
