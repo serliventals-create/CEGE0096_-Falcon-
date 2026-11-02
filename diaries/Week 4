@@ -1,0 +1,121 @@
+Group Diary
+
+Group name: CEGE0096_Falcon
+
+Repository URL: https://github.com/serliventals-create/CEGE0096_-Falcon-/
+
+## Week 4 — Preparation and Familiarisation
+
+Group meeting: 20 October 2026 (outside classroom), attended by all members.
+
+At the meeting we went through the coursework brief, the marking scheme and the
+list of permitted packages (matplotlib, numpy, pandas, pyproj, shapely,
+geopandas, rasterio, Rtree, NetworkX). We then agreed how to divide the eight
+core tasks:
+
+| Task | Description | Responsible |
+|---|---|---|
+| 1 | User Input / System Output | Tim |
+| 2 | Triplet Orientation | Serena |
+| 3 | Object-Oriented Programming | Everyone |
+| 4 | Convex Hull (Gift Wrapping) | Tim |
+| 5 | Map Plotting | Winnie |
+| 6 | Highest Point Identification | Eric |
+| 7 | Nearest Integrated Transport Network | Winnie, Serena |
+| 8 | Shortest Path (Naismith's rule) | Eric |
+
+### Contributions by Member
+
+- Tim: took responsibility for Task 1 and Task 4. Read
+  the template code for user input and the convex hull (`main.py`, `point.py`,
+  `convex_hull.py`, `input.csv`, `sample_output.csv`) and reviewed the Gift
+  Wrapping pseudocode in the brief.
+- Serena: took responsibility for Task 2 and shares Task 7
+  with Winnie. Worked through the orientation formula and the example in the
+  brief (p(0,0), q(4,4), r(1,2) gives −4, i.e. counterclockwise), and started
+  reading about R-trees.
+- Winnie: took responsibility for Task 5 and shares Task 7
+  with Serena. Checked the background map and elevation rasters and looked at
+  how to add a colour bar, north arrow, scale bar and legend in matplotlib.
+- Eric: took responsibility for Task 6 and Task 8.
+  Inspected the elevation raster and the ITN JSON file (format, resolution and
+  coordinate system, EPSG:27700), and reviewed rasterio windows and Naismith's
+  rule.
+- Everyone (Task 3): discussed an initial class design, with each member
+  responsible for writing the classes for their own tasks.
+- Eric created the private group repository from the project template and
+  added all members and the module staff (`xlwang233`, `inwind0212`) as
+  collaborators. Each member added their individual diary to `diaries/`.
+
+### Collaboration and Integration
+
+- **Task dependencies**: the tasks form a chain:
+  Task 1 (user location) → Task 6 (highest point within 5 km) → Task 7 (nearest
+  ITN nodes to the user and to the highest point) → Task 8 (shortest route) →
+  Task 5 (final map). Task 2 is used inside Task 4 (convex hull).
+- **Agreed interfaces** (so members can work in parallel with mock data):
+  - Task 1 returns the user location as `(easting, northing)` in British
+    National Grid, or exits if the point is outside the allowed box.
+  - Task 2 returns a number: `0` (colinear), `> 0` (clockwise) or `< 0`
+    (counterclockwise).
+  - Task 6 returns the highest point as `(easting, northing, elevation)`.
+  - Task 7 returns two ITN node IDs: the node nearest the user and the node
+    nearest the highest point.
+  - Task 8 returns an ordered list of node IDs, a shapely `LineString` of the
+    route and the estimated walking time.
+  - Task 5 takes the user location, highest point and route and produces the map.
+- **Task 7 split**: [Winnie will build the R-tree index of ITN nodes and Serena
+  will implement the nearest-node queries] — to be confirmed next week.
+- **OOP structure (Task 3)**: we agreed on a draft set of classes based on the
+  brief's examples (`Point`, `OrientationChecker`, `ConvexHullGenerator`,
+  `MapVisualizer`, `RoutePlanner`, `UserInterface`, plus classes for Tasks 6 and
+  7). `main.py` will only connect these classes together.
+- **Git practice**: each member created a branch named
+  `{first_initial}_{last_name}_{student_number}` and practised committing,
+  pushing, pull requests and resolving merge conflicts. We agreed to merge into
+  `main` only through pull requests that another member has reviewed.
+
+### Challenges and Decisions
+
+- **Waiting on other tasks**: because the tasks depend on each other, later
+  tasks cannot use real inputs at first. We decided that each member will start
+  with mock inputs (for example, fixed coordinates or hand-picked ITN nodes)
+  and replace them with the real implementations during integration.
+- **Shared tasks**: Task 3 belongs to everyone and Task 7 is shared, so there is
+  a risk of duplicated or conflicting code. We decided to agree class names and
+  interfaces first, and to note clearly in commits and diaries who wrote what.
+- **Git experience**: some members had little experience of Git in a team, so we
+  agreed that everyone would practise in a test repository this week before
+  writing real code.
+- **Packages**: we agreed to use only the permitted packages for the eight core
+  tasks, and to check every new `import` before merging.
+- **Creativity component**: we discussed the optional creativity marks and will
+  decide next week whether to attempt it. The presentation slot must be booked
+  by 8 January.
+
+### Relevant Commits
+
+  — Tim: Add individual diary for Week 4
+  — Serena: Add individual diary for Week 4
+  — Winnie: Add individual diary for Week 4
+  — Eric: Add individual diary for Week 4
+  — Eric: Compile the group diary and add group diary for Week 4
+
+### Plans for Next Week
+
+- **Tim**: implement the input check for Task 1 and a first version of the Gift
+  Wrapping algorithm for Task 4, tested against `sample_output.csv`.
+- **Serena**: implement and test the orientation function for Task 2, then start
+  her part of Task 7.
+- **Winnie**: plot the background map with the elevation overlay for Task 5, and
+  start her part of Task 7.
+- **Eric**: read the elevation raster with a rasterio window and find the highest
+  point within 5 km (Task 6), and build a first NetworkX graph from the ITN data
+  (Task 8).
+- **Everyone**: confirm the final class design and the Task 7 split, commit to
+  individual branches every week, and update individual diaries and this group
+  diary before the next deadline.
+
+*GenAI (Claude) was used to help structure and improve the English of this entry.*
+
+<!-- Add a dated entry every week, including Reading Week. -->
