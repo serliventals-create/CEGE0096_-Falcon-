@@ -16,12 +16,12 @@ Copy this file as
 Attended the group's first coursework meeting on 20/10/2026, where we went through the eight core tasks, the marking scheme and the list of permitted packages (matplotlib, numpy, pandas, pyproj, shapely, geopandas, rasterio, Rtree, NetworkX).\
 Agreed my responsibilities with the group: Task 6: Highest Point Identification and Task 8 — Shortest path using Naismith's rule (15 marks in total).\
 Helped map out the dependencies between tasks.
-- Task 6 needs the validated user location from Task 1. Its output, the highest point, is used by Task 7 (the nearest ITN node to the highest point) and by Task 5 (plotting the highest point marker).\
-- Task 8 needs the two ITN nodes found in Task 7 and the elevation raster. Its output, the route, is used by Task 5 (plotting the route line).\
+- Task 6 needs the validated user location from Task 1. Its output, the highest point, is used by Task 7 (the nearest ITN node to the highest point) and by Task 5 (plotting the highest point marker).
+- Task 8 needs the two ITN nodes found in Task 7 and the elevation raster. Its output, the route, is used by Task 5 (plotting the route line).
 
 Proposed simple interfaces so we can develop in parallel. Proposed simple interfaces so we can develop in parallel and integrate later:
-- Task 6 takes the user's (easting, northing) and returns the highest point as (easting, northing, elevation).\
-- Task 8 takes the start and end ITN node IDs and returns an ordered list of node IDs, a shapely LineString of the route and the estimated walking time.\
+- Task 6 takes the user's (easting, northing) and returns the highest point as (easting, northing, elevation).
+- Task 8 takes the start and end ITN node IDs and returns an ordered list of node IDs, a shapely LineString of the route and the estimated walking time.
 
 Created my individual branch c_liu_26222131 in the group repository and added this diary file to the diaries/ folder.\
 Read the template code (main.py, point.py, convex_hull.py, plotter.py) to understand the expected structure, and looked through the provided data (the ITN JSON file and the elevation raster) to see their format and coordinate system.\
