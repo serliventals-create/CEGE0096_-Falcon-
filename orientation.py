@@ -5,7 +5,7 @@ class OrientationCheck():
     '''Returns: 
         0: Collinear
         1: Clockwise
-        2: Counterclockwise'''
+        -1: Counterclockwise'''
     
     @staticmethod
     def orientation(p, q, r):
