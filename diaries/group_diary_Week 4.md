@@ -98,10 +98,10 @@ core tasks:
 
 ### Relevant Commits
 
-  — Tim: Add individual diary for Week 4
-  — Serena: Add individual diary for Week 4
-  — Winnie: Add individual diary for Week 4
-  — Eric: Add individual diary for Week 4
+  — Tim: Add individual diary for Week 4\
+  — Serena: Add individual diary for Week 4\
+  — Winnie: Add individual diary for Week 4\
+  — Eric: Add individual diary for Week 4\
   — Eric: Compile the group diary and add group diary for Week 4
 
 
