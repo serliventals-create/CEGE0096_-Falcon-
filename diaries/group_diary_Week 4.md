@@ -8,8 +8,6 @@ Repository URL: https://github.com/serliventals-create/CEGE0096_-Falcon-/
 
 ### Contributions by Member
 
-## Week 4 — Preparation and Familiarisation
-
 Group meeting: 20 October 2026 13:00-14:00 (outside classroom), attended by all members.
 
 At the meeting we went through the coursework brief, the marking scheme and the
