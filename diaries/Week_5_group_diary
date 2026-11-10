@@ -1,0 +1,68 @@
+# Group Diary
+
+Group name: CEGE0096_Falcon
+
+Repository URL: https://github.com/serliventals-create/CEGE0096_-Falcon-/
+
+## Week 5 
+
+### Contributions by Member
+
+Group meeting: 3 November 2026 13:00-14:00 (outside classroom), attended by Eric, Winnie, Serena (Tim had a prior commitment and was updated via WhatsApp group).
+
+At the meeting, we talked through what each member accomplished throughout the week, 
+the challenges and questions we had from our individual tasks, and set goals to work on for the coming week. 
+
+
+### Collaboration and Integration
+
+- Tim: took responsibility for Task 1 and Task 4. This week, he successfully wrote and committed Task 1. 
+- Serena: took responsibility for Task 2 and shared Task 7
+  with Winnie. Completed Task 2, looked over Winnie's code for Task 5. 
+- Winnie: took responsibility for Task 5 and shares Task 7
+  with Serena. Completed Task 5, created GitHub branch. 
+- Eric: took responsibility for Task 6 and Task 8. Started working on Task 6. 
+- Everyone (Task 3): discussed an initial class design, with each member
+  responsible for writing the classes for their own tasks.
+
+- **Task dependencies**: the tasks form a chain:
+  Task 1 (user location) → Task 6 (highest point within 5 km) → Task 7 (nearest
+  ITN nodes to the user and to the highest point) → Task 8 (shortest route) →
+  Task 5 (final map). Task 2 is used inside Task 4 (convex hull).
+- Tasks 1 and 2 have been completed. Task 4 can be developed with the implementation of Task 2. 
+Task 5 has been completed with mock data, and will be edited once other tasks are complete. 
+-  `{first_initial}_{last_name}_{student_number}` and practised committing,
+  pushing, pull requests and resolving merge conflicts. We agreed to merge into
+  `main` only through pull requests that another member has reviewed.
+
+
+### Challenges and Decisions
+
+- **Waiting on other tasks**: because the tasks depend on each other, we decided that 
+  each member will start with mock inputs. So far this has been working well; group 
+  communication is mostly in person during our weekly meetings, and via WhatsApp group.
+- **Git experience**: some members had little experience of Git in a team, so although code was written, 
+  commits were delayed. This is a goal to work on for next week for more efficient collaboration.  
+- **Packages**: we agreed to use only the permitted packages for the eight core
+  tasks, and to check every new `import` before merging.
+- **Creativity component**: We discussed the optional creativity marks and decided 
+  that we will attempt it after gaining more familiarity with the project. 
+
+
+### Relevant Commits
+
+  — Tim: Add individual diary for Week 5 and completed Task 1.\
+  — Serena: Add individual diary for Week 5, completed group diary, completed Task 2.\
+  — Winnie: Add individual diary for Week 5, completed Task 5.\
+  — Eric: Add individual diary for Week 5, working on Task 6.\
+
+
+### Plans for Next Week
+
+- **Tim**: implement the code from Task 2 into Task 4 code, working with relevant checks. 
+- **Serena**: Work with Winnie on her Task 5, start working on her part for Task 7. 
+- **Winnie**: Finish up Task 5, start working on her part for Task 7.
+- **Eric**: Read the elevation raster with a rasterio window and find the highest
+  point within 5 km (Task 6).
+- **Everyone**: Commit to individual branches every week, and update individual diaries 
+  and this group diary before the next deadline.
