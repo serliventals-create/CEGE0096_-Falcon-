@@ -100,11 +100,11 @@ Commit my progress to my branch and update this diary before the next deadline.
   masked arrays can replace loops for this kind of analysis.
 ### Relevant Commits
  
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/tree/c_liu_26222131<hash>)
   — Add HighestPointFinder class to read elevation within a window (Task 6)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/tree/c_liu_26222131<hash>)
   — Mask cells outside 5 km radius and return highest point (Task 6)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/tree/c_liu_26222131<hash>)
   — Add Week 5 individual diary entry
 ### Plans for Next Week
  
