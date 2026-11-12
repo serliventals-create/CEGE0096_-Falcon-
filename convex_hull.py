@@ -23,30 +23,33 @@ points = [
 
 leftmost = min(points, key=lambda p: p[0])
 
-print("Leftmost point:", leftmost)
-
 hull = []
 
 point_on_hull = leftmost
 
-hull.append(point_on_hull)
+while True:
 
-print(hull)
+    hull.append(point_on_hull)
 
-endpoint = points[0]
+    endpoint = points[0]
 
-print("Endpoint:", endpoint)
+    for candidate in points:
 
-for candidate in points:
+        if endpoint == point_on_hull:
+            endpoint = candidate
 
-    if endpoint == point_on_hull:
-        endpoint = candidate
+        elif OrientationCheck.orientation(
+            point_on_hull,
+            endpoint,
+            candidate) == -1:
 
-    elif OrientationCheck.orientation(
-        point_on_hull,
-        endpoint,
-        candidate) == 1:
+            endpoint = candidate
 
-        endpoint = candidate
+    point_on_hull = endpoint
 
-print("Next hull point:", endpoint)
+    if endpoint == leftmost:
+        break
+
+print("Convex hull:")
+for point in hull:
+    print(point)
