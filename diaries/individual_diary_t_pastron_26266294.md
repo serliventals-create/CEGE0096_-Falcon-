@@ -76,3 +76,7 @@ Branch: `t_pastron_26266294`
 ### Relevant Commits
 
 - Convex hull commit with working input and output csv
+
+### Next Steps
+
+- Now with Task 4 - Convex Hull functioning as desired, I am intereseted at looking into how I can visually represent the hull points, using the plotter.py code, and this is what I will work on next.
