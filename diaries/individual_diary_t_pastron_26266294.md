@@ -52,3 +52,23 @@ Branch: `t_pastron_26266294`
 ### Next Steps
 
 - Next, I will incorporate both input and output files, so that the points for the convex hull can be read from input.csv, and resulting hull can be written to output.csv
+
+
+
+## Week 6
+
+### My Contribution
+
+- The next step in my convex hull task was to finish off the input.csv and output.csv reading and writing capability, which would allow the program to run with a foreign set of points, given that they were formatted correctly, inside input.csv
+- I completed the code, and subsequently was able to remove the example points within the script. On running the code, I could see that the algorithm was correctly reading the input.csv file, as well as providing the hull points in output.csv. I also made a print output, letting the user know that the hull points had been saved to output.csv.
+- Importantly, I wanted to test the algorithm on its ability to cope with example datasets. To do this, I generated foreign random data and imported it into the project folder as a .csv file. I then told the program to read this file temporarily, rather than input.csv. After a successful run, I also made sure to repeat the same, with a dataset including duplicate coordinates and multiple collinear points, which can expose edge cases in convex hull implementation. The algorithm also managed to provide the correct outputs for this test, and therefore I was happy that the testing was successful, and the gift wrapping algorithm to calculate the convex hull was working as desired. 
+
+### Challenges and Learning
+
+- Testing the algorithm with example data is a crucial step in the process of writing code, therefore I felt that it was essential to do so. In the process, there are several important steps to make sure that testing happens sucessfully. 
+1. The read command had to be modified to the name of the example csv
+2. These changes had to be saved
+3. The program had to be re-run, and output tested against expected output from the test datasets.
+4. Most important - the read input file had to be reverted back to input.csv after testing was complete, so that the program would continue to run in its expected way. 
+
+- The key learning point in this process was understanding the importance of going beyond simply checking whether the algorithm produced a convex hull. I tested whether the algorithm remained reliable when the input data contained duplicates, collinear points, and interior coordinates. 
