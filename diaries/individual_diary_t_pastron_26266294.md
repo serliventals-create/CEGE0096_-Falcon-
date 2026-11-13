@@ -72,3 +72,7 @@ Branch: `t_pastron_26266294`
 4. Most important - the read input file had to be reverted back to input.csv after testing was complete, so that the program would continue to run in its expected way. 
 
 - The key learning point in this process was understanding the importance of going beyond simply checking whether the algorithm produced a convex hull. I tested whether the algorithm remained reliable when the input data contained duplicates, collinear points, and interior coordinates. 
+
+### Relevant Commits
+
+- Convex hull commit with working input and output csv
