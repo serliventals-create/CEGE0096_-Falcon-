@@ -12,17 +12,14 @@ The point.py and plotter.py helpers are optional and may be adapted.
 
 import pandas as pd
 from orientation import OrientationCheck
+from plotter import Plotter
 
-
-#------------------
 df = pd.read_csv("input.csv")
 
 points = []
 
 for _,point in df.iterrows():
     points.append((point['x'], point['y']))
-
-#------------------
 
 leftmost = min(points, key=lambda p: p[0])
 
@@ -65,8 +62,12 @@ for point in hull:
         "y" : point[1]
     })
 
-#Save the hull points to output.csv
+# Save the hull points to output.csv
 output_df = pd.DataFrame(output_rows)
 output_df.to_csv("output.csv", index=False)
 
 print("Convex hull points have been saved to output.csv")
+
+# Visualisation of the hull points using the Plotter class from plotter.py
+plotter = Plotter(points, hull)
+plotter.plot()
