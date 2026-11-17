@@ -4,7 +4,7 @@ Group name: CEGE0096_Falcon
 
 Repository URL: https://github.com/serliventals-create/CEGE0096_-Falcon-/
 
-## Week 4 — Preparation and Familiarisation
+## Week 4 — Preparation and Familiarisation (written by Eric)
 
 ### Contributions by Member
 
