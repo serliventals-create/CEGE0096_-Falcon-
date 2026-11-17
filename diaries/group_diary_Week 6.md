@@ -80,6 +80,7 @@
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Eric: Improve docstrings and PEP8 formatting for Task 6
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Eric: Compile the group diary and add group diary for Week 6
   — Serena: [commit message]
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Winnie: [commit message]
