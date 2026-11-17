@@ -118,3 +118,72 @@ Commit my progress to my branch and update this diary before the next deadline.
   links and their coordinates) and build a first NetworkX graph. I plan to get a
   simple shortest-distance route working first, then add Naismith's rule weights.
 - Continue committing weekly and update this diary, including during Reading Week.
+
+
+## Week 6 — Reading Week
+
+*Date: [14 Nov 2026]*
+
+### My Contributions
+
+- Completed a **first full draft of Task 6 — Highest Point Identification**.
+  The `HighestPointFinder` class now runs from start to finish: it takes the
+  user's `(easting, northing)`, reads only the area around the user, masks cells
+  outside the 5 km radius and returns the highest point as
+  `(easting, northing, elevation)`.
+- Tested the draft with several user locations, not just the suggested test
+  point (439619, 85800):
+  - points in the middle of the island;
+  - points close to the edge of the allowed box from Task 1;
+  - points near the coast, where part of the 5 km circle falls over the sea.
+
+  In each case I plotted the masked elevation and the result to check that the
+  highest point lies inside the circle and on the highest ground.
+- Made the class easier to reuse and test: the raster path and radius are set
+  when the object is created (default radius 5000 m), and the elevation data is
+  kept as a private attribute in line with the group's OOP guidelines.
+- Added error handling for cases where no valid elevation cells are found inside
+  the circle, so the program gives a clear message instead of crashing.
+- Improved the docstrings and comments and checked the code against PEP8.
+- Shared the output format and a sample result with Winnie and Serena so they
+  can test Task 7 with a real highest point instead of mock data.
+
+### Challenges and Learning
+
+- **Coastal locations**: near the coast, many cells in the circle are no-data
+  (sea). I checked that the masked array ignores these cells, so the highest
+  point is always on land. This confirmed that reading the raster with
+  `masked=True` was the right decision.
+- **Edge of the raster**: for points close to the edge of the allowed box, I
+  checked that the 10 km window still fits inside the raster. Because Task 1
+  only accepts points at least 5 km from the raster edge, the window never goes
+  outside the data, which shows why Task 1 uses that box.
+- **Checking correctness**: it is hard to tell whether the highest point is
+  correct just from the numbers. Plotting the elevation with the circle and the
+  result on top made it much easier to check and to find mistakes.
+- Reading Week gave me time to review my Week 5 code. I simplified some steps
+  and learned that writing small test cases makes it easier to change code
+  without breaking it.
+
+### Relevant Commits
+
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Complete first draft of HighestPointFinder (Task 6)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Add error handling when no valid elevation cells are found (Task 6)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Improve docstrings and PEP8 formatting for Task 6
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Add Week 6 individual diary entry
+
+### Plans for Next Week
+
+- Ask a group member (most probably Winnie or Tim) to review the Task 6 code, then open a pull request to
+  merge it into `main`.
+- Work with Tim to connect Task 1 (user input) to Task 6, so the highest point
+  is found from the real user location in `main.py`.
+- Start Task 8: read the ITN JSON file, understand its structure (nodes, road
+  links and their coordinates) and build a first NetworkX graph.
+- Get a simple shortest-distance route working first, using mock start and end
+  nodes until Task 7 is ready, then begin adding Naismith's rule weights.
+- Continue committing weekly and update this diary.
