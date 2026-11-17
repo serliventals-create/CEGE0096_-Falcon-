@@ -4,7 +4,7 @@
 
 ### Contributions by Member
 
-- **Tim ** — Task 4 (Convex Hull):
+- Tim — Task 4 (Convex Hull):
   - Completed reading from `input.csv` and writing the hull points to
     `output.csv`, so the program can now run on any correctly formatted set of
     points. Removed the hard-coded example points from the script and added a
@@ -12,7 +12,7 @@
   - Tested the Gift Wrapping algorithm on his own randomly generated datasets,
     and on datasets containing duplicate coordinates, multiple collinear points
     and interior points. The algorithm produced the correct hull in all tests.
-- **Eric ** — Task 6 (Highest Point Identification):
+- Eric — Task 6 (Highest Point Identification):
   - Completed a first full draft of the `HighestPointFinder` class, which reads
     the elevation raster around the user with a rasterio window, masks cells
     outside the 5 km radius and returns the highest point as
@@ -26,14 +26,13 @@
     and comments and checked the code against PEP8.
   - Shared the output format and a sample result with Winnie and Serena for
     Task 7.
-- **Serena ([STUDENT NUMBER])** — Task 2 (Triplet Orientation) / Task 7:
+- Serena — Task 2 (Triplet Orientation) / Task 7:
   - Completed Task 2, the function that determines whether three points are
     colinear, clockwise or counterclockwise.
   - Reviewed Winnie's Task 5 code.
   - Wrote and committed this week's group diary.
   - Started looking into how to complete Task 7 with Winnie.
-- **Winnie ([STUDENT NUMBER])** — Task 5 (Map Plotting) / Task 7:
-  - [Progress on Task 5 this week.]
+- Winnie — Task 5 (Map Plotting) / Task 7:
   - Reviewed Serena's Task 2 code during the group meeting and found an error
     in the return values.
   - Started looking into how to complete Task 7 with Serena.
@@ -95,7 +94,5 @@
 - **Winnie**: [next steps for Task 5], and begin her part of Task 7.
 - **Everyone**: continue weekly commits and diary updates, and start planning how
   the tasks will be integrated in `main.py`.
-
-*GenAI (Claude) was used to help structure and improve the English of this entry.*
 
 <!-- Add a dated entry every week, including Reading Week. -->
