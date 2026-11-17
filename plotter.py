@@ -12,13 +12,13 @@ class Plotter:
         self.title = title
 
     def plot(self):
-        x_points = [p.x for p in self.points]
-        y_points = [p.y for p in self.points]
+        x_points = [p[0] for p in self.points]
+        y_points = [p[1] for p in self.points]
 
         # Close the hull for display, without changing the original list.
         hull_points = self.hull + [self.hull[0]] if self.hull else []
-        x_hull = [p.x for p in hull_points]
-        y_hull = [p.y for p in hull_points]
+        x_hull = [p[0] for p in hull_points]
+        y_hull = [p[1] for p in hull_points]
 
         plt.figure(figsize=(8, 8))
         plt.scatter(x_points, y_points, label="Points", color="blue")
@@ -26,8 +26,8 @@ class Plotter:
 
         for point in self.points:
             plt.annotate(
-                f"({int(point.x)},{int(point.y)})",
-                (point.x, point.y),
+                f"({int(point[0])},{int(point[1])})",
+                point,
                 textcoords="offset points",
                 xytext=(0, 5),
                 ha="center",
