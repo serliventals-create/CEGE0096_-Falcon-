@@ -249,7 +249,7 @@ Commit my progress to my branch and update this diary before the next deadline.
 
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Finalise HighestPointFinder and add get_elevation_in_radius (Task 6)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/main/main.py)
   — Merge Task 6 into main (pull request #[N])
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Add NaismithCalculator class (Task 8)
