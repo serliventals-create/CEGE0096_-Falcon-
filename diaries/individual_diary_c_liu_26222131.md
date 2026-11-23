@@ -251,9 +251,9 @@ Commit my progress to my branch and update this diary before the next deadline.
   — Finalise HighestPointFinder and add get_elevation_in_radius (Task 6)
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/main/main.py)
   — Merge Task 6 into main (pull request #[N])
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-2.py)
   — Add NaismithCalculator class (Task 8)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-2.py)
   — Build directed ITN graph and first shortest-distance route (Task 8)
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/diaries/individual_diary_c_liu_26222131.md)
   — Add Week 7 individual diary entry
