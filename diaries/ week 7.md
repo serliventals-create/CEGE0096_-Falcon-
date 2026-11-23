@@ -1,6 +1,6 @@
 # Group Diary
 
-## Week 7 — Coursework Development
+## Week 7 —  (written by Eric)
 
 *Group meeting: [20 Nov 2026] ([on Teams])*
 
