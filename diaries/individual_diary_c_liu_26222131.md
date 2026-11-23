@@ -187,3 +187,87 @@ Commit my progress to my branch and update this diary before the next deadline.
 - Get a simple shortest-distance route working first, using mock start and end
   nodes until Task 7 is ready, then begin adding Naismith's rule weights.
 - Continue committing weekly and update this diary.
+
+
+## Week 7 — Coursework Development
+
+*Date: [21 Nov 2026]*
+
+### My Contributions
+
+- **Completed Task 6 — Highest Point Identification.**
+  - Finalised `highest_point.py`. The `HighestPointFinder` class has two public
+    methods:
+    - `find_highest_point(x, y)` returns `(easting, northing, elevation)` in
+      the format agreed with the group;
+    - `get_elevation_in_radius(x, y)` returns the masked elevation inside the
+      5 km circle and its extent, so Winnie can plot the elevation inside the
+      buffer for Task 5.
+  - Added a check for invalid search radii, and clipped the reading window to
+    the raster so the code also works for points close to the raster edge.
+  - Ran the final version on the real elevation raster with the test point
+    (439619, 85800). The highest point is at [EASTING, NORTHING] with an
+    elevation of [ELEVATION] m, which matches the highest area in my plot.
+  - [A group member] reviewed the code, and I merged it into `main` through a
+    pull request.
+  - As required by the brief, I added a GenAI declaration at the top of the
+    file, because I used GenAI (Claude) to help develop the structure of the
+    module. I then tested and adapted the code myself.
+- **Started Task 8 — Shortest Path using Naismith's rule.**
+  - Opened the ITN JSON file and studied its structure: `roadnodes` store each
+    node's coordinates, and `roadlinks` store each road's start node, end
+    node, length and the list of vertices along the road.
+  - Started `shortest_path.py` with a `NaismithCalculator` class that
+    calculates walking time: distance at 5 km/h, plus 1 minute for every 10 m
+    of ascent (downhill adds no time).
+  - Began building the network as a NetworkX directed graph (`DiGraph`), with
+    one edge in each direction for every road link.
+  - Got a first shortest-distance route working between two hand-picked test
+    nodes, as a fallback version before adding the Naismith weights.
+
+### Challenges and Learning
+
+- **Finishing Task 6**: testing with the real raster showed that a point close
+  to the raster edge could make the reading window extend past the data.
+  Task 1 should stop this from happening, but I clipped the window to the
+  raster as well, so Task 6 does not depend completely on another task being
+  correct.
+- **Why Task 8 needs a directed graph**: Naismith's rule only adds time for
+  going uphill. A road that climbs from A to B is slower in that direction
+  than from B to A, so one weight per road is not enough. I learned that a
+  directed graph solves this by storing a separate edge, and a separate
+  walking time, for each direction.
+- **Understanding the ITN data**: at first I did not know how the nodes and
+  links were connected. Printing a few entries from the JSON file helped me
+  see that each link refers to its start and end nodes by id, which is
+  exactly what NetworkX needs to build the graph.
+- **Working without Task 7**: Task 8 needs the nearest nodes from Task 7,
+  which is not finished yet. I picked start and end nodes by hand for
+  testing, so I can develop Task 8 now and connect it to Task 7 later.
+
+### Relevant Commits
+
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Finalise HighestPointFinder and add get_elevation_in_radius (Task 6)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Merge Task 6 into main (pull request #[N])
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Add NaismithCalculator class (Task 8)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Build directed ITN graph and first shortest-distance route (Task 8)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Add Week 7 individual diary entry
+
+### Plans for Next Week
+
+- Task 8: sample the elevation at every vertex of each road link and use it
+  to calculate the climb and Naismith walking time in each direction.
+- Use NetworkX's Dijkstra algorithm with the walking time as the weight, and
+  compare the result with the shortest-distance route.
+- Join the road vertices along the route into a shapely `LineString`, so
+  Winnie can draw the route on the map for Task 5.
+- Test Task 8 with small, hand-made networks where the correct answer is
+  known (for example, a short road over a hill and a longer flat detour).
+- Agree the node id format with Winnie and Serena, and replace my test nodes
+  with their Task 7 output once it is ready.
+- Continue committing weekly and update this diary.
