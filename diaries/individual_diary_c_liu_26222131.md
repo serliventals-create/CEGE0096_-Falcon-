@@ -100,9 +100,9 @@ Commit my progress to my branch and update this diary before the next deadline.
   masked arrays can replace loops for this kind of analysis.
 ### Relevant Commits
  
-- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/tree/c_liu_26222131<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/highest_point.py)
   — Add HighestPointFinder class to read elevation within a window (Task 6)
-- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/tree/c_liu_26222131<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/highest_point.py)
   — Mask cells outside 5 km radius and return highest point (Task 6)
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/diaries/individual_diary_c_liu_26222131.md)
   — Add Week 5 individual diary entry
@@ -167,11 +167,11 @@ Commit my progress to my branch and update this diary before the next deadline.
 
 ### Relevant Commits
 
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/highest_point.py)
   — Complete first draft of HighestPointFinder (Task 6)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/highest_point.py)
   — Add error handling when no valid elevation cells are found (Task 6)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/highest_point.py)
   — Improve docstrings and PEP8 formatting for Task 6
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/diaries/individual_diary_c_liu_26222131.md)
   — Add Week 6 individual diary entry
@@ -247,7 +247,7 @@ Commit my progress to my branch and update this diary before the next deadline.
 
 ### Relevant Commits
 
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/highest_point.py)
   — Finalise HighestPointFinder and add get_elevation_in_radius (Task 6)
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/main/main.py)
   — Merge Task 6 into main (pull request #[N])
