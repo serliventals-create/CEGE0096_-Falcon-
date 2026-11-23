@@ -250,7 +250,7 @@ Commit my progress to my branch and update this diary before the next deadline.
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/highest_point.py)
   — Finalise HighestPointFinder and add get_elevation_in_radius (Task 6)
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/main/main.py)
-  — Merge Task 6 into main (pull request #[N])
+  — Merge Task 6 into main
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-2.py)
   — Add NaismithCalculator class (Task 8)
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-2.py)
