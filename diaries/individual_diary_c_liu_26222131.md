@@ -104,7 +104,7 @@ Commit my progress to my branch and update this diary before the next deadline.
   — Add HighestPointFinder class to read elevation within a window (Task 6)
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/tree/c_liu_26222131<hash>)
   — Mask cells outside 5 km radius and return highest point (Task 6)
-- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/tree/c_liu_26222131<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/diaries/individual_diary_c_liu_26222131.md)
   — Add Week 5 individual diary entry
 ### Plans for Next Week
  
@@ -173,7 +173,7 @@ Commit my progress to my branch and update this diary before the next deadline.
   — Add error handling when no valid elevation cells are found (Task 6)
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Improve docstrings and PEP8 formatting for Task 6
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/diaries/individual_diary_c_liu_26222131.md)
   — Add Week 6 individual diary entry
 
 ### Plans for Next Week
@@ -255,7 +255,7 @@ Commit my progress to my branch and update this diary before the next deadline.
   — Add NaismithCalculator class (Task 8)
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Build directed ITN graph and first shortest-distance route (Task 8)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/diaries/individual_diary_c_liu_26222131.md)
   — Add Week 7 individual diary entry
 
 ### Plans for Next Week
