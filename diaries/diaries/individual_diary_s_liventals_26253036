@@ -1,3 +1,69 @@
+## Week 7- 
+
+### My Contributions
+This week I continued developing Task 7. I focused on completing the nearest-neighbour search functionality and testing the implementation against 
+the supplied ITN dataset. I used the R - tree spatial indexing method mentioned in the previous week to identify the closest road network to a given coordinate.
+The method retrieves the corresponding ITN node identifier and coordinates, then calculates the distance between the input location and the selected node. I structured 
+the method to return the node ID, coordinates, and distance, allowing its output to be reused by other parts of the application. This is particularly important for integrating 
+Task 7 with Task 8, which requires the network node identifiers to calculate a route. Created a separate test file to test functionality. 
+
+### Challenges and Learning 
+I had several inconsistencies in naming, which caused issues with imports. I also encountered issues with debugging and implementation of the R- tree concept into physical code.
+Working through these issues improved my understanding of file paths, external libraries, and virtual environments. I also developed a clearer understanding of how R-tree nearest-neighbour 
+searching works and how the resulting node information can be used in network-based route planning.
+
+
+
+### Relevant Code Commits
+Commited Task 7. 
+
+### Plans for Next Week
+As this task is shared with Winnie, I have reached out to meet to compare code and identify mistakes, as well as what should be integrated, for 
+best collaboration possible. 
+
+
+## Week 6- 
+
+### My Contributions
+This week I began working on Task 7. This task involves identifying the nearest Integrated Transport Network (ITN) nodes
+to the user's location and the highest elevation data from Task 6. As I did not have access to Task 6 data yet, I used placeholders. The work
+for this week was primarily focused on understanding how Task 7 fits into the overall network of code. I established that the primary purpose of this
+task is to identify nearest road network nodes to be used as starting points for shortest path calculation in Task 8. 
+
+### Challenges and Learning 
+There were many aspects of this task I was unfamiliar with, so I spent some time researching background information. I learned about how R trees 
+can be used for spatial indexing and nearest neighbour searches. This makes spatial indexing more efficient compared to calculating the distance 
+individually, especially with a large data set. 
+
+### Relevant Code Commits
+No relevant code commits this week. 
+
+### Plans for Next Week
+My next step is to complete the nearest-neighbour search method and test the implementation using sample coordinates.
+
+
+## Week 5- 
+
+### My Contributions
+Completed Task 2.  
+Discussed progress, questions, and challenges with team members during the weekly group meeting. 
+Wrote and committed the group Diary. 
+Acted as an editor to Winnie's Task 5 code. 
+Started looking into how to complete Task 7 with Winnie.  
+
+### Challenges and Learning 
+Made a value error in my Task 2 code. Instead of setting up my collinear, clockwise, counterclockwise values 
+as 1, 0, -1, I accidentally wrote one part of the code as -1, 0, 2. 
+Winnie caught this mistake while reviewing my code during the group meeting. 
+Familiarising myself with the code required for Task 7. 
+
+### Relevant Code Commits
+Task 2.  
+
+### Plans for Next Week
+Begin working on my section for Task 7.
+Continue learning how to use GitHub.
+
 ## Week 4- — Preparation and Familiarisation
 
 ### My Contributions
