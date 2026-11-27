@@ -54,9 +54,10 @@ class NearestITNNode:
         return node_id, (node_x, node_y), distance
 
     def find_route_nodes(self, user_location, highest_point):
-
+        highest_coords = highest_point[:2]
+            
         start_node = self.find_nearest(user_location)
-        end_node = self.find_nearest(highest_point)
+        end_node = self.find_nearest(highest_coords)
 
         return start_node, end_node
     
