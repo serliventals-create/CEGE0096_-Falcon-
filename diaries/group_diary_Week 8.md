@@ -1,33 +1,32 @@
+# Group Diary
 
-## Week 8 — Coursework Development
-
-*Date: [27 Nov 2026]*
+## Week 8 —  (written by Eric)
 
 ### Progress Overview
 
 | Task | Description | Responsible | Status |
 |---|---|---|---|
-| 1 | User Input / System Output | Tim | Complete |
-| 2 | Triplet Orientation | Serena | Complete |
-| 3 | Object-Oriented Programming | Everyone | [Complete / In progress] |
-| 4 | Convex Hull (Gift Wrapping) | Tim | Complete |
-| 5 | Map Plotting | Winnie | Complete |
-| 6 | Highest Point Identification | Eric | Complete |
-| 7 | Nearest Integrated Transport Network | Winnie, Serena | Complete (revising after review) |
+| 1 | User Input / System Output | Tim | Completed |
+| 2 | Triplet Orientation | Serena | Completed |
+| 3 | Object-Oriented Programming | Everyone | Completed |
+| 4 | Convex Hull (Gift Wrapping) | Tim | Completed |
+| 5 | Map Plotting | Winnie | Completed |
+| 6 | Highest Point Identification | Eric | Completed |
+| 7 | Nearest Integrated Transport Network | Winnie, Serena | Completed (revising after review) |
 | 8 | Shortest Path (Naismith's rule) | Eric | In progress (Parts 1–4 done) |
 
 ### Contributions by Member
 
-- **Tim ([STUDENT NUMBER])** — Tasks 1 and 4 complete.
+- **Tim** — Tasks 1 and 4 complete.
   - Reviewed the Task 7 code written by Winnie and Serena and gave feedback.
-- **Serena ([STUDENT NUMBER])** — Tasks 2 and 7:
+- **Serena** — Tasks 2 and 7:
   - Task 2 complete.
   - Completed Task 7 with Winnie: finding the ITN node nearest the user and
     the node nearest the highest point.
-- **Winnie ([STUDENT NUMBER])** — Tasks 5 and 7:
+- **Winnie** — Tasks 5 and 7:
   - Task 5 complete.
   - Completed Task 7 with Serena.
-- **Eric ([STUDENT NUMBER])** — Tasks 6 and 8:
+- **Eric** — Tasks 6 and 8:
   - Task 6 complete.
   - Completed Parts 1–4 of Task 8 (`shortest_path.py`):
     - **Part 1**: constants for Naismith's rule (5 km/h, and 1 minute per
