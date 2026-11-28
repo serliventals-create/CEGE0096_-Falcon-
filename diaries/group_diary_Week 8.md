@@ -84,7 +84,7 @@
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Eric: Add explanatory comments and docstrings to Task 8
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
-  — Eric: Start manual test for Task 8 (Part 5)
+  — Eric: Group diary (week 8)
 
 ### Plans for Next Week
 
