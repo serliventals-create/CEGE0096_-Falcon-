@@ -271,3 +271,94 @@ Commit my progress to my branch and update this diary before the next deadline.
 - Agree the node id format with Winnie and Serena, and replace my test nodes
   with their Task 7 output once it is ready.
 - Continue committing weekly and update this diary.
+
+## Week 8 — Coursework Development
+
+*Date: [27 Nov 2026]*
+
+### My Contributions
+
+- **Completed Parts 1–4 of Task 8 — Shortest Path using Naismith's rule**
+  (`shortest_path.py`):
+  - **Part 1 – Constants**: defined the two values in Naismith's rule as named
+    constants: walking speed (5 km/h = about 83.3 m per minute) and the
+    climbing penalty (1 minute per 10 m of ascent).
+  - **Part 2 – `NaismithCalculator`**: finished the class. `ascent()` adds up
+    only the uphill changes in height along a road and ignores missing
+    values, and `walking_time()` returns flat walking time plus the extra
+    time for climbing.
+  - **Part 3 – `ITNNetwork`**: finished building the directed graph. The
+    elevation of every vertex of every road link is sampled from the raster
+    in a single pass with `rasterio.sample`, and each road becomes two edges
+    (one per direction), each with its own length, climb and Naismith walking
+    time.
+  - **Part 4 – `RoutePlanner`**: finds the quickest route with NetworkX's
+    Dijkstra algorithm, using walking time as the weight. It returns the
+    agreed output: the list of node ids, the route as a shapely `LineString`
+    and the total walking time in minutes. It can also find the
+    shortest-distance route (`weight="length"`) for comparison, and
+    `route_summary()` gives the total distance, climb and time.
+- **Tested Parts 1–4 with small hand-made networks** where the correct answer
+  is known:
+  - a climb of 10 → 15 → 12 → 20 m gives 13 m of ascent (the 3 m drop is
+    ignored);
+  - on a road that climbs 100 m, the uphill direction takes 10 minutes longer
+    than the downhill direction;
+  - with a 1 km road over a 200 m hill and a flat 1.28 km detour, the
+    Naismith route takes the detour (about 15 minutes instead of 32), while
+    the shortest-distance route goes over the hill;
+  - the route `LineString` joins the road vertices in the correct order, and
+    clear errors are raised for unknown nodes or when no route exists.
+- Added explanatory comments before each part of the code, and docstrings for
+  every class and method, so that readers can follow the code easily.
+- **Started Part 5 — testing helper and manual test**: began writing a
+  temporary nearest-node helper and a manual test that runs the whole chain
+  for the test point (439619, 85800): user location → highest point (Task 6)
+  → nearest nodes → quickest route (Task 8).
+
+### Challenges and Learning
+
+- **Speed of elevation sampling**: opening the raster once for every road link
+  was very slow. Collecting all vertices into one list, sampling them in one
+  pass and then splitting the results back per link made building the graph
+  much faster.
+- **Direction of travel**: I learned that reversing the list of heights for
+  the backward edge automatically turns uphill into downhill, so the same
+  `ascent()` method gives the correct climb in both directions.
+- **Building the route line**: the list of nodes only gives the junctions, but
+  roads bend between them. I stored each edge's vertices in its own direction
+  and joined them end to end, skipping the repeated vertex where two edges
+  meet.
+- **Duplicate links**: some pairs of nodes are joined by more than one road
+  link. Because a `DiGraph` can only hold one edge per direction between two
+  nodes, I kept the quicker link, which is the one a walker would choose.
+- **Testing with known answers**: building tiny networks where I could work
+  out the correct route by hand gave me confidence that the code is correct
+  before running it on the full ITN data.
+
+### Relevant Commits
+
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Sample elevation along road links and add Naismith weights (Task 8)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Add RoutePlanner with Dijkstra route and LineString output (Task 8)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Add explanatory comments and docstrings to Task 8
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Start manual test for Task 8 (Part 5)
+- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+  — Add Week 8 individual diary entry
+
+### Plans for Next Week
+
+- Finish Part 5 and run the full chain on the real ITN and elevation data with
+  the test point (439619, 85800), checking that the route and walking time
+  look sensible on a map.
+- Compare the Naismith route with the shortest-distance route for the test
+  point, and record the difference.
+- Replace the temporary nearest-node helper with Winnie and Serena's Task 7
+  implementation once it is ready.
+- Pass the route `LineString` to Winnie so it can be plotted on the Task 5 map.
+- Ask a group member to review Task 8, then merge it into `main` through a
+  pull request.
+- Continue committing weekly and update this diary.
