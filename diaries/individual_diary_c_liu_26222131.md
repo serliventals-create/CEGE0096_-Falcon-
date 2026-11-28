@@ -346,7 +346,7 @@ Commit my progress to my branch and update this diary before the next deadline.
   — Add explanatory comments and docstrings to Task 8
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Start manual test for Task 8 (Part 5)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/diaries/individual_diary_c_liu_26222131.md)
   — Add Week 8 individual diary entry
 
 ### Plans for Next Week
@@ -359,6 +359,6 @@ Commit my progress to my branch and update this diary before the next deadline.
 - Replace the temporary nearest-node helper with Winnie and Serena's Task 7
   implementation once it is ready.
 - Pass the route `LineString` to Winnie so it can be plotted on the Task 5 map.
-- Ask a group member to review Task 8, then merge it into `main` through a
+- Ask Tim to review Task 8, then merge it into `main` through a
   pull request.
 - Continue committing weekly and update this diary.
