@@ -338,13 +338,13 @@ Commit my progress to my branch and update this diary before the next deadline.
 
 ### Relevant Commits
 
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Sample elevation along road links and add Naismith weights (Task 8)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Add RoutePlanner with Dijkstra route and LineString output (Task 8)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Add explanatory comments and docstrings to Task 8
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Start manual test for Task 8 (Part 5)
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Add Week 8 individual diary entry
