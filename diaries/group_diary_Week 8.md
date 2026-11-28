@@ -83,7 +83,7 @@
   — Eric: Add RoutePlanner with Dijkstra route and LineString output (Task 8)
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Eric: Add explanatory comments and docstrings to Task 8
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/main/diaries/group_diary_Week%208.md)
   — Eric: Group diary (week 8)
 
 ### Plans for Next Week
