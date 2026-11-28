@@ -77,11 +77,11 @@
   — Serena / Winnie: [complete task 7]
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/s_liventals_26253036/nearest_itn.py)
   — Tim: [review comments on Task 7]
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Eric: Sample elevation along road links and add Naismith weights (Task 8)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Eric: Add RoutePlanner with Dijkstra route and LineString output (Task 8)
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/c_liu_26222131/shortest_path_1-4.py)
   — Eric: Add explanatory comments and docstrings to Task 8
 - [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/main/diaries/group_diary_Week%208.md)
   — Eric: Group diary (week 8)
