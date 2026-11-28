@@ -73,10 +73,10 @@
 
 ### Relevant Commits
 
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
-  — Serena / Winnie: [commit message for Task 7]
-- [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
-  — Tim: [review comments on Task 7 / pull request #[N]]
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/s_liventals_26253036/nearest_itn.py)
+  — Serena / Winnie: [complete task 7]
+- [`<hash>`](https://github.com/serliventals-create/CEGE0096_-Falcon-/blob/s_liventals_26253036/nearest_itn.py)
+  — Tim: [review comments on Task 7]
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
   — Eric: Sample elevation along road links and add Naismith weights (Task 8)
 - [`<hash>`](https://github.com/[OWNER]/CEGE0096_[GROUPNAME]/commit/<hash>)
